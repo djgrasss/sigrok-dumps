@@ -1,0 +1,27 @@
+-------------------------------------------------------------------------------
+RFID EM4100
+-------------------------------------------------------------------------------
+
+This is a signal taken from the read pin a rfid copier. A tag was placed
+infront of the coil and the logic analyzer started sampling from within
+pulseview.
+
+The tag hex value is 0200F5ED8D which can be seen by the output from the
+protocol decoder.
+
+
+Logic analyzer setup
+--------------------
+
+The logic analyzer used was a Saleae Logic16 clone:
+
+  Probe       RFID reader
+  ------------------------
+  1           RFID reader coil
+
+
+Data
+----
+
+There is noise from the coil at the beginning and end. In the middle the tag
+repeats its message.
